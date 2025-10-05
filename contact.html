@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ISSA — Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="contact-page">
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-brand">ISSA Student Hub</div>
+      <div>
+        <ul class="nav-links" role="navigation" aria-label="Primary">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>Questions? Reach out — we’re here to help.</p>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <section>
+        <h2 class="section-title">Get in Touch</h2>
+        <form class="contact-form" action="#" method="post" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" required>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <section style="margin-top:16px;">
+        <h2 class="section-title">Other Contacts</h2>
+        <p class="meta">Email: contact@issa.com</p>
+        <p class="meta">Phone: +1-800-555-5555</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 ISSA Student Hub — Contact
+  </footer>
+</body>
+</html>
