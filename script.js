@@ -8,28 +8,28 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (event) {
     const errors = [];
 
-    // Username: at least 3 characters
-    if (usernameInput.value.trim().length < 3) {
+    // Username validation
+    if (usernameInput.value.length < 3) {
       errors.push("Username must be at least 3 characters long.");
     }
 
-    // Email: valid email format
+    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(emailInput.value.trim())) {
+    if (!emailRegex.test(emailInput.value)) {
       errors.push("Please enter a valid email address.");
     }
 
-    // Password: at least 6 characters
+    // Password validation
     if (passwordInput.value.length < 6) {
       errors.push("Password must be at least 6 characters long.");
     }
 
-    // Password match
+    // Password confirmation
     if (passwordInput.value !== confirmPasswordInput.value) {
       errors.push("Passwords do not match.");
     }
 
-    // If errors exist, prevent form submission and alert them
+    // Show errors and prevent submission
     if (errors.length > 0) {
       event.preventDefault();
       alert(errors.join("\n"));
